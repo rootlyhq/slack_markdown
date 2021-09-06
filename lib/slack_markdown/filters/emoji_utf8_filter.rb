@@ -10,8 +10,7 @@ module SlackMarkdown
       def call
         doc.search('.//text()').each do |node|
           content = node.to_html
-          # next if has_ancestor?(node, ignored_ancestor_tags)
-          # next unless content.include?('`')
+          next unless content.include?(':')
           html = emoji_filter(content)
           next if html == content
           node.replace(html)
