@@ -6,7 +6,7 @@ require 'slack_markdown/filters/multiple_quote_filter'
 require 'slack_markdown/filters/quote_filter'
 require 'slack_markdown/filters/multiple_code_filter'
 require 'slack_markdown/filters/code_filter'
-require 'slack_markdown/filters/emoji_filter'
+# require 'slack_markdown/filters/emoji_filter'
 require 'slack_markdown/filters/bold_filter'
 require 'slack_markdown/filters/italic_filter'
 require 'slack_markdown/filters/line_break_filter'
@@ -25,7 +25,7 @@ module SlackMarkdown
         SlackMarkdown::Filters::QuoteFilter,
         SlackMarkdown::Filters::MultipleCodeFilter,
         SlackMarkdown::Filters::CodeFilter,
-        SlackMarkdown::Filters::EmojiFilter,
+        # SlackMarkdown::Filters::EmojiFilter,
         SlackMarkdown::Filters::BoldFilter,
         SlackMarkdown::Filters::ItalicFilter,
         SlackMarkdown::Filters::LineBreakFilter,
