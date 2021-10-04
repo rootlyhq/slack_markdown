@@ -27,7 +27,6 @@ module SlackMarkdown
         SlackMarkdown::Filters::EmojiUtf8Filter,
         SlackMarkdown::Filters::BoldFilter,
         SlackMarkdown::Filters::ItalicFilter,
-        SlackMarkdown::Filters::LineBreakFilter,
       ]
     end
 
