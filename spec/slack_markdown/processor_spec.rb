@@ -28,7 +28,8 @@ EOS
   end
 
   it do
-    should eq "<a href=\"/@ru_shalm\" class=\"mention\">@ru_shalm</a> @U23456 <a href=\"http://localhost/?url=http%3A%2F%2Ftoripota.com\" class=\"channel\">#ru_shalm</a> <b>SlackMarkdown</b> is <code>text formatter</code> <i>gem</i> .<br><blockquote> 🍭 is <a href=\"http://localhost/?url=http%3A%2F%2Ftoripota.com%2Fimg%2Fru_shalm.png\" class=\"link\">http://toripota.com/img/ru_shalm.png</a><br>
+    should eq "<a href=\"/@ru_shalm\" class=\"mention\">@ru_shalm</a> @U23456 <a href=\"http://localhost/?url=http%3A%2F%2Ftoripota.com\" class=\"channel\">#ru_shalm</a> <b>SlackMarkdown</b> is `text formatter` <i>gem</i> .
+<blockquote> 🍭 is <a href=\"http://localhost/?url=http%3A%2F%2Ftoripota.com%2Fimg%2Fru_shalm.png\" class=\"link\">http://toripota.com/img/ru_shalm.png</a>
 </blockquote>"
   end
 end
