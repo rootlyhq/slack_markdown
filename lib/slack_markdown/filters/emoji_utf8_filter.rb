@@ -25,7 +25,7 @@ module SlackMarkdown
 
       def emoji_filter(text)
         text.gsub(EMOJI_PATTERN) do
-          ::Emoji.find_by_alias($1)&.raw
+          ::Emoji.find_by_alias($1)&.raw || ":#{$1}:"
         end
       end
 

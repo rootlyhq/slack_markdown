@@ -14,6 +14,6 @@ describe SlackMarkdown::Filters::EmojiUtf8Filter do
 
   context 'Delete unidentifable tags' do
     let(:text) { 'Hello :lollipop: :rolling_on_the_floor_laughing:' }
-    it { should eq 'Hello 🍭 ' }
+    it { should eq 'Hello 🍭 :rolling_on_the_floor_laughing:' }
   end
 end
