@@ -36,6 +36,13 @@ module SlackMarkdown
             else
               ['mention', nil, data]
             end
+          when /\A!subteam\^([A-Za-z0-9]+)/ # usergroup
+            usergroup = context.include?(:on_slack_usergroup_id) ? context[:on_slack_usergroup_id].call($1) : nil
+            if usergroup
+              ['mention', nil, "@#{usergroup[:text]}"]
+            else
+              ['mention', nil, data]
+            end
           when /\A@(.+)/ # user name
             user = context.include?(:on_slack_user_name) ? context[:on_slack_user_name].call($1) : nil
             if user
