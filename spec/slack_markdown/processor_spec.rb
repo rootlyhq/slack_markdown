@@ -25,7 +25,7 @@ describe SlackMarkdown::Processor do
 
   let :text do
     <<EOS
-<@U12345> <@U23456> <#C01S1JQMYKV|ru_shalm> <!subteam^SAZ94GDB8> *SlackMarkdown* is `text formatter` _gem_ .
+<@U12345> <@U23456> <#C01S1JQMYKV|ru_shalm> <!subteam^SAZ94GDB8|@usergroup> *SlackMarkdown* is `text formatter` _gem_ .
 > :eyes: :rolling_on_the_floor_laughing: :lollipop: is <http://toripota.com/img/ru_shalm.png>
 EOS
   end
