@@ -21,6 +21,7 @@ Gem::Specification.new do |spec|
 
   spec.add_dependency 'html-pipeline', '~> 2.0'
   spec.add_dependency 'escape_utils'
+  spec.add_dependency 'cgi'
   spec.add_dependency 'gemoji'
 
   spec.add_development_dependency 'bundler'
